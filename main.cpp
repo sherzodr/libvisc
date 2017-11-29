@@ -15,20 +15,17 @@ int main() {
 		string name;
 		int visc40;
 		float visc100;
-		int vi;
-		float m;
-		float vtc;
 	};
 
 	sampleLube lubeList[] = {
-			{"Naphthenic spindle oil", 30, 4.24, 40, 4.05, 0.847},
-			{"Paraffinic spindle oil", 30, 5.23, 105, 3.68, 0.819},
-			{"Medium solvent extract", 120, 8.0, -50, 4.51, 0.939},
-			{"Medium polyglycol     ", 120, 20.9, 200, 2.53, 0.826},
-			{"Medium silicone oil   ", 120, 50.0, 424, 1.14, 0.583},
-			{"Multigrade motor oil  ", 70, 11.1, 165, 2.82, 0.841},
-			{"Ester oil             ", 30, 5.81, 140, 3.40, 0.806},
-            {"Tribology-ABC         ", 68, 8.6,  0, 0, 0}
+			{"Naphthenic spindle oil", 30, 4.24 },
+			{"Paraffinic spindle oil", 30, 5.23 },
+			{"Medium solvent extract", 120, 8.0 },
+			{"Medium polyglycol     ", 120, 20.9},
+			{"Medium silicone oil   ", 120, 50.0},
+			{"Multigrade motor oil  ", 70, 11.1 },
+			{"Ester oil             ", 30, 5.81 },
+            {"Tribology-ABC         ", 68, 8.6  }
 	};
 
 	int list_size = sizeof(lubeList) / sizeof(lubeList[0]);
@@ -44,7 +41,13 @@ int main() {
 
 		Lubricant lube(row.name, row.visc40, row.visc100); // initializing Lubricant instance with three parameters;
 
-		cout << lube.label() << "\t" << lube.visc(40) << "\t" << lube.visc(100) <<"\t" << lube.visc(60) << "\t" << lube.vi() << "\t" << lube.m() << "\t" << lube.vtc() << endl;
+		cout << lube.label() << 
+            "\t" << lube.visc(40) << 
+            "\t" << lube.visc(100) <<
+            "\t" << lube.visc(60) << 
+            "\t" << lube.vi() << 
+            "\t" << lube.m() << 
+            "\t" << lube.vtc() << endl;
 	}
     cout << "========================================================================\n";
 
