@@ -27,8 +27,9 @@ libvisc.h describes interface of the  **Lubricant** class.
     }
 
 
-For more information look into libvisc.h
+For more information look into libvisc.h as well as main.cpp, which generates sample data.
 
+Once you download it, just cd into the libvisc/ and type *make*. It will generate a **main** executable.
 
 # TODO
 
