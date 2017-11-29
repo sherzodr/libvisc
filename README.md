@@ -29,7 +29,20 @@ libvisc.h describes interface of the  **Lubricant** class.
 
 For more information look into libvisc.h as well as main.cpp, which generates sample data.
 
-Once you download it, just cd into the libvisc/ and type *make*. It will generate a **main** executable.
+Once you download it, just cd into the libvisc/ and type *make*. It will generate a **main** executable. It should
+generate the following output:
+
+        Label			visc40	visc100	visc60	vi	m	vtc
+        ========================================================================
+        Naphthenic spindle oil	30	4.24	13.1064	-25	4.24669	0.858667
+        Paraffinic spindle oil	30	5.23	14.525	104	3.67225	0.825667
+        Medium solvent extract	120	8	    36.9947	-49	4.47134	0.933333
+        Medium polyglycol     	120	20.9	59.5139	200	2.52709	0.825833
+        Medium silicone oil   	120	50	    86.3819	423	1.14093	0.583333
+        Multigrade motor oil  	70	11.1	32.9198	150	3.08679	0.841429
+        Ester oil             	30	5.81	15.2728	139	3.39742	0.806333
+        Tribology-ABC         	68	8.6	    28.6455	96	3.60799	0.873529
+        ========================================================================
 
 # TODO
 
