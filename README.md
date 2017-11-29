@@ -14,7 +14,7 @@ libvisc.h describes interface of the  **Lubricant** class.
 
         using namespace std;
         
-        /* Initializing the lubricant with label, viscosity @ 40 and viscosity at 100
+        /* Initializing the lubricant with label, viscosity @ 40 and viscosity at 100 */
         Lubricant lube("Paraffinic spindle oil", 30, 5.23);
 
         cout << "vi = " << lube.vi() << endl;
