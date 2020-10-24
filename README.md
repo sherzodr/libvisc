@@ -46,6 +46,18 @@ Then run generated executable *example* (or *example.exe*)
         Ester oil             	30	5.81	15.2728	139	3.39742	0.806333
         Tribology-ABC         	68	8.6	    28.6455	96	3.60799	0.873529
         ========================================================================
+        
+        
+# COMPILE
+
+Once *livisc* is installed you can link the library to your source code like so:
+
+    g++ your_prog.cpp -lvisc
+    
+To set a non-standart library path:
+
+    g++ -L"path/to/lib" your_prog.cpp -lvisc
+
 
 # TODO
 
