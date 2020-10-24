@@ -1,9 +1,12 @@
 # libvisc
 Implements Ubbelohde-Walther equation (ASTM D341) and  ASTM D2270 (Viscosity Index) implementation in C++
 
-# Description
+# INSTALL
 
-libvisc.h describes interface of the  **Lubricant** class.
+
+    ./configure
+    make
+    make install
 
 # Example
 
@@ -27,10 +30,10 @@ libvisc.h describes interface of the  **Lubricant** class.
     }
 
 
-For more information look into libvisc.h as well as main.cpp, which generates sample data.
+For more information look into libvisc.h as well as example.cpp, which generates
+a sample data. To compile this file, after *./configure* run *make example*.
+Then run generated executable *example* (or *example.exe*)
 
-Once you download it, just cd into the libvisc/ and type *make*. It will generate a **main** executable. It should
-generate the following output:
 
         Label			visc40	visc100	visc60	vi	m	vtc
         ========================================================================
